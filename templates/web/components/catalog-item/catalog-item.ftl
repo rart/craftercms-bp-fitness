@@ -1,7 +1,6 @@
 <#import "/templates/system/common/crafter.ftl" as crafter />
 
-
-<div class="catalog-item wow fadeInUp" data-wow-delay="1.9s">
+<@crafter.div class="catalog-item wow fadeInUp" data\-wow\-delay="1.9s">
 	<div class="blog-thumb catalog-item-size" onmouseover='this.style.backgroundImage="url(${contentModel.classImage_s})"'>
 		<#assign classDays = "" />
     <#if contentModel.classDays_o?? && contentModel.classDays_o.item??>
@@ -31,4 +30,4 @@
 			</@crafter.span>
 		</h5>
 	</div>
-</div>
+</@crafter.div>

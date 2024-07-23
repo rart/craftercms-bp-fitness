@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
-	<content-type>/component/component-overview</content-type>	<display-template>/templates/web/components/overview.ftl</display-template>
+	<content-type>/component/component-overview</content-type>
+	<display-template>/templates/web/components/overview.ftl</display-template>
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>36c2</objectGroupId>
 	<objectId>36c2da6f-76b5-8881-7283-ea7cda1254a5</objectId>

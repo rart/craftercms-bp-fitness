@@ -2,7 +2,7 @@
 <!-- =========================
     HEADER SECTION
 ============================== -->
-<div class="navbar navbar-default navbar-fixed-top sticky-navigation" role="navigation">
+<@crafter.div class="navbar navbar-default navbar-fixed-top sticky-navigation" role="navigation">
 	<div class="container">
 
 		<div class="navbar-header">
@@ -12,9 +12,7 @@
 				<span class="icon icon-bar"></span>
 			</button>
 			<a href="#" class="navbar-brand">
-				<@crafter.span $field="gymName_t">
-					${contentModel.gymName_t}
-				</@crafter.span>
+				<@crafter.span $field="gymName_t:"/>
 			</a>
 		</div>
 		<div class="collapse navbar-collapse">
@@ -26,35 +24,29 @@
 				row, index
 			>
 				<a href="${row.navigationMenu_s}">
-					<@crafter.span $field="navigationMenuList_o.navigationMenuLabel_t" $index=index>${row.navigationMenuLabel_t}</@crafter.span>
+					<@crafter.span $field="navigationMenuList_o.navigationMenuLabel_t" $index=index>
+						${row.navigationMenuLabel_t}
+					</@crafter.span>
 				</a>
 			</@crafter.renderRepeatGroup>
 		</div>
 
 	</div>
-</div>
+</@crafter.div>
 <section id="home" class="parallax-section">
 	<div class="banner">
 		<div class="container">
 			<div class="row">
 
 				<div class="col-md-offset-1 col-md-10 col-sm-12">
-					<@crafter.h3 $field="h3FirstText_t" class="wow bounceIn" $attributes={'data-wow-delay': '0.9s'}>
-						${contentModel.h3FirstText_t}
-					</@crafter.h3>
+					<@crafter.h3 $field="h3FirstText_t:" class="wow bounceIn" $attributes={'data-wow-delay': '0.9s'}/>
 					<h1 class="wow fadeInUp" data-wow-delay="1.6s">
-						<@crafter.span $field="h1SecondText_t">
-							${contentModel.h1SecondText_t}
-						</@crafter.span>
+						<@crafter.div $field="h1SecondText_t:"/>
 						<br/>
-						<@crafter.span $field="h1ThirdText_t">
-							${(contentModel.h1ThirdText_t)!""}
-						</@crafter.span>
+						<@crafter.span $field="h1ThirdText_t:"/>
 					</h1>
 					<a href="${contentModel.buttonSectionLink_s}" class="wow fadeInUp smoothScroll btn btn-default" data-wow-delay="2s">
-						<@crafter.span $field="buttonText_t">
-							${contentModel.buttonText_t}
-						</@crafter.span>
+						<@crafter.span $field="buttonText_t:"/>
 					</a>
 				</div>
 
@@ -63,7 +55,7 @@
 		<#if contentModel.mediaBanner_o.item??>
 			<#assign myItem = siteItemService.getSiteItem(contentModel.mediaBanner_o.item.key) />
 
-			<#if myItem.displayMedia_s = 'video'>
+			<#if myItem.displayMedia_s == "video">
 				<@crafter.div class="header-video">
 					<#if myItem.videoBackground_s??>
 						<@crafter.video $model=myItem $field="videoBackground_s" playsinline="" autoplay="" muted="" loop="" class="header-video__teaser-video" id="header-video__teaser-video">

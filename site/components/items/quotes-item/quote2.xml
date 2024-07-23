@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
-	<content-type>/component/component-quote-item</content-type>	<display-template/>
+	<content-type>/component/component-quote-item</content-type>
+	<display-template/>
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>cb23</objectGroupId>
 	<objectId>cb237d34-3203-162a-d88f-d6a65f7036a9</objectId>
