@@ -5,7 +5,7 @@
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>e6fb</objectGroupId>
 	<objectId>e6fb4f11-7dc7-9c43-7b10-85b92dc11eb5</objectId>
-	<bannerImages_o>
+	<bannerImages_o item-list="true">
 		<item>
 			<bannerImage_s>/static-assets/images/home-bg-slider-img1.jpg</bannerImage_s>
 		</item>

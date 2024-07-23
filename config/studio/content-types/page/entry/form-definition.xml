@@ -5,8 +5,9 @@
 	<content-type>/page/entry</content-type>
 	<imageThumbnail>undefined</imageThumbnail>
 	<quickCreate>false</quickCreate>
-	<quickCreatePath></quickCreatePath>
-	<properties>		<property>
+	<quickCreatePath/>
+	<properties>
+		<property>
 			<name>placeInNav</name>
 			<label>Show In Nav</label>
 			<value>true</value>
@@ -27,22 +28,23 @@
 		<property>
 			<name>no-template-required</name>
 			<label>No Template Required</label>
-			<value></value>
+			<value/>
 			<type>boolean</type>
 		</property>
 	</properties>
-	<sections>		<section>
+	<sections>
+		<section>
 			<title>Page Settings</title>
-			<description></description>
+			<description/>
 			<defaultOpen>true</defaultOpen>
 			<fields>
 				<field>
 					<type>file-name</type>
 					<id>file-name</id>
-					<iceId></iceId>
+					<iceId/>
 					<title>Page URL</title>
 					<description>DESC</description>
-					<defaultValue></defaultValue>
+					<defaultValue/>
 					<help>HELP</help>
 					<properties>
 						<property>
@@ -57,17 +59,16 @@
 						</property>
 						<property>
 							<name>path</name>
-							<value></value>
+							<value/>
 							<type>string</type>
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 					</properties>
-					<constraints>
-					</constraints>
+					<constraints/>
 				</field>
 				<field>
 					<type>input</type>
@@ -75,7 +76,7 @@
 					<iceId>optional</iceId>
 					<title>File Title</title>
 					<description>optional</description>
-					<defaultValue></defaultValue>
+					<defaultValue/>
 					<help>optional</help>
 					<properties>
 						<property>
@@ -90,7 +91,7 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
@@ -111,7 +112,7 @@
 		</section>
 		<section>
 			<title>Main Content</title>
-			<description></description>
+			<description/>
 			<defaultOpen>true</defaultOpen>
 			<fields>
 				<field>
@@ -119,9 +120,9 @@
 					<id>title_t</id>
 					<iceId>title</iceId>
 					<title>Title</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>size</name>
@@ -135,7 +136,7 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
@@ -163,17 +164,17 @@
 					<iceId>core</iceId>
 					<title>Header</title>
 					<description>It is provider by Section Default if you add a new one you will override it.</description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>minSize</name>
-							<value></value>
+							<value/>
 							<type>int</type>
 						</property>
 						<property>
 							<name>maxSize</name>
-							<value></value>
+							<value>1</value>
 							<type>int</type>
 						</property>
 						<property>
@@ -183,17 +184,22 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>disableFlattening</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>useSingleValueFilename</name>
-							<value></value>
+							<value/>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useMVS</name>
+							<value/>
 							<type>boolean</type>
 						</property>
 					</properties>
@@ -210,9 +216,9 @@
 					<id>pageSections_o</id>
 					<iceId>content</iceId>
 					<title>Page Sections</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>minSize</name>
@@ -221,7 +227,7 @@
 						</property>
 						<property>
 							<name>maxSize</name>
-							<value></value>
+							<value/>
 							<type>int</type>
 						</property>
 						<property>
@@ -231,17 +237,17 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>disableFlattening</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>useSingleValueFilename</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 					</properties>
@@ -256,20 +262,20 @@
 				<field>
 					<type>node-selector</type>
 					<id>controllers_o</id>
-					<iceId></iceId>
+					<iceId/>
 					<title>Controllers</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>minSize</name>
-							<value></value>
+							<value/>
 							<type>int</type>
 						</property>
 						<property>
 							<name>maxSize</name>
-							<value></value>
+							<value/>
 							<type>int</type>
 						</property>
 						<property>
@@ -279,17 +285,17 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>disableFlattening</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>useSingleValueFilename</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 					</properties>
@@ -304,20 +310,20 @@
 				<field>
 					<type>node-selector</type>
 					<id>footer_o</id>
-					<iceId></iceId>
+					<iceId/>
 					<title>Footer</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>minSize</name>
-							<value></value>
+							<value/>
 							<type>int</type>
 						</property>
 						<property>
 							<name>maxSize</name>
-							<value></value>
+							<value>1</value>
 							<type>int</type>
 						</property>
 						<property>
@@ -327,17 +333,22 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>disableFlattening</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>useSingleValueFilename</name>
-							<value></value>
+							<value/>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useMVS</name>
+							<value/>
 							<type>boolean</type>
 						</property>
 					</properties>
@@ -352,210 +363,211 @@
 			</fields>
 		</section>
 	</sections>
-	<datasources>				<datasource>
-					<type>img-desktop-upload</type>
-					<id>desktopImages</id>
-					<title>Desktop Images</title>
-					<interface>image</interface>
-					<properties>
-						<property>
-							<name>repoPath</name>
-							<value>/static-assets/images/pages/{objectId}/</value>
-								<type>undefined</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>components</type>
-					<id>headerSource</id>
-					<title>Header Source</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>allowShared</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>allowEmbedded</name>
-							<value>false</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableBrowse</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableSearch</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>baseRepositoryPath</name>
-							<value>/site/components/header</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>baseBrowsePath</name>
-							<value>/site/components/header</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>contentTypes</name>
-							<value>/component/component-header</value>
-								<type>contentTypes</type>
-						</property>
-						<property>
-							<name>tags</name>
-							<value></value>
-								<type>string</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>components</type>
-					<id>pageSectionsSource</id>
-					<title>Page Sections Source</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>allowShared</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>allowEmbedded</name>
-							<value>false</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableBrowse</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableSearch</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>baseRepositoryPath</name>
-							<value>/site/components/page-sections</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>baseBrowsePath</name>
-							<value>/site/components/page-sections</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>contentTypes</name>
-							<value>/component/component-catalog,/component/component-newsletter,/component/component-overview,/component/component-quotes,/component/component-service,/component/component-trainers</value>
-								<type>contentTypes</type>
-						</property>
-						<property>
-							<name>tags</name>
-							<value></value>
-								<type>string</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>components</type>
-					<id>scripts</id>
-					<title>Scripts</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>allowShared</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>allowEmbedded</name>
-							<value>false</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableBrowse</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableSearch</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>baseRepositoryPath</name>
-							<value>/scripts/components</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>baseBrowsePath</name>
-							<value>/scripts/components</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>contentTypes</name>
-							<value></value>
-								<type>contentTypes</type>
-						</property>
-						<property>
-							<name>tags</name>
-							<value></value>
-								<type>string</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>components</type>
-					<id>footerSource</id>
-					<title>Footer Source</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>allowShared</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>allowEmbedded</name>
-							<value>false</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableBrowse</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableSearch</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>baseRepositoryPath</name>
-							<value>/site/components/footer</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>baseBrowsePath</name>
-							<value>/site/components/footer</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>contentTypes</name>
-							<value>/component/component-footer</value>
-								<type>contentTypes</type>
-						</property>
-						<property>
-							<name>tags</name>
-							<value></value>
-								<type>string</type>
-						</property>
-					</properties>
-				</datasource>
+	<datasources>
+		<datasource>
+			<type>img-desktop-upload</type>
+			<id>desktopImages</id>
+			<title>Desktop Images</title>
+			<interface>image</interface>
+			<properties>
+				<property>
+					<name>repoPath</name>
+					<value>/static-assets/images/pages/{objectId}/</value>
+					<type>undefined</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>components</type>
+			<id>headerSource</id>
+			<title>Header Source</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>allowShared</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>allowEmbedded</name>
+					<value>false</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableBrowse</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableSearch</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>baseRepositoryPath</name>
+					<value>/site/components/header</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>baseBrowsePath</name>
+					<value>/site/components/header</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>contentTypes</name>
+					<value>/component/component-header</value>
+					<type>contentTypes</type>
+				</property>
+				<property>
+					<name>tags</name>
+					<value/>
+					<type>string</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>components</type>
+			<id>pageSectionsSource</id>
+			<title>Page Sections Source</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>allowShared</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>allowEmbedded</name>
+					<value>false</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableBrowse</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableSearch</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>baseRepositoryPath</name>
+					<value>/site/components/page-sections</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>baseBrowsePath</name>
+					<value>/site/components/page-sections</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>contentTypes</name>
+					<value>/component/component-catalog,/component/component-newsletter,/component/component-overview,/component/component-quotes,/component/component-service,/component/component-trainers</value>
+					<type>contentTypes</type>
+				</property>
+				<property>
+					<name>tags</name>
+					<value/>
+					<type>string</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>components</type>
+			<id>scripts</id>
+			<title>Scripts</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>allowShared</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>allowEmbedded</name>
+					<value>false</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableBrowse</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableSearch</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>baseRepositoryPath</name>
+					<value>/scripts/components</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>baseBrowsePath</name>
+					<value>/scripts/components</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>contentTypes</name>
+					<value/>
+					<type>contentTypes</type>
+				</property>
+				<property>
+					<name>tags</name>
+					<value/>
+					<type>string</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>components</type>
+			<id>footerSource</id>
+			<title>Footer Source</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>allowShared</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>allowEmbedded</name>
+					<value>false</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableBrowse</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableSearch</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>baseRepositoryPath</name>
+					<value>/site/components/footer</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>baseBrowsePath</name>
+					<value>/site/components/footer</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>contentTypes</name>
+					<value>/component/component-footer</value>
+					<type>contentTypes</type>
+				</property>
+				<property>
+					<name>tags</name>
+					<value/>
+					<type>string</type>
+				</property>
+			</properties>
+		</datasource>
 	</datasources>
 </form>

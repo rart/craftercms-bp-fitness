@@ -65,7 +65,7 @@
 				</@crafter.div>
 			<#else>
 				<#assign imageSource = "" />
-				<#if myItem.bannerImages_o.item?? >
+				<#if myItem.bannerImages_o.item??>
 					<#list myItem.bannerImages_o.item as row>
 						<#if (imageSource?length > 0) >
 							<#assign imageSource = imageSource + ',' + row.bannerImage_s />
