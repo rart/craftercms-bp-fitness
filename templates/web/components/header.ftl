@@ -39,13 +39,13 @@
 			<div class="row">
 
 				<div class="col-md-offset-1 col-md-10 col-sm-12">
-					<@crafter.h3 $field="h3FirstText_t:" class="wow bounceIn" $attributes={'data-wow-delay': '0.9s'}/>
-					<h1 class="wow fadeInUp" data-wow-delay="1.6s">
+					<@crafter.h3 $field="h3FirstText_t:" class="wow bounceIn" $attributes={'data-wow-delay': '0.5s'}/>
+					<h1 class="wow fadeInUp" data-wow-delay="500ms">
 						<@crafter.div $field="h1SecondText_t:"/>
 						<br/>
 						<@crafter.span $field="h1ThirdText_t:"/>
 					</h1>
-					<a href="${contentModel.buttonSectionLink_s}" class="wow fadeInUp smoothScroll btn btn-default" data-wow-delay="2s">
+					<a href="${contentModel.buttonSectionLink_s}" class="wow fadeInUp smoothScroll btn btn-default" data-wow-delay="500ms">
 						<@crafter.span $field="buttonText_t:"/>
 					</a>
 				</div>

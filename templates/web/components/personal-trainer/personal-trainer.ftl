@@ -14,7 +14,7 @@
 			<ul class="social-icon">
 				<#if contentModel.socialMediaLinks_o?? && contentModel.socialMediaLinks_o.item??>
 					<#list contentModel.socialMediaLinks_o.item as item>
-						<li><a href="${item.url_s}" class="fa fa-${item.socialNetworkName_s} wow fadeInUp" data-wow-delay="1s"></a></li>
+						<li><a href="${item.url_s}" class="fa fa-${item.socialNetworkName_s} wow fadeInUp" data-wow-delay="500ms"></a></li>
 					</#list>
 				</#if>
 			</ul>

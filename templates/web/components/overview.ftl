@@ -6,13 +6,13 @@
       <div class="col-md-6 col-sm-12">
         <@crafter.img $field="imageSection_s" class="img-responsive" src=(contentModel.imageSection_s) alt=(contentModel.titleText_t) />
         <#if contentModel.displayBlockQuote_b>
-          <@crafter.blockquote $field="quoteDescription_html:" class="wow fadeInUp" $attributes={'data-wow-delay': '1.9s'}/>
+          <@crafter.blockquote $field="quoteDescription_html:" class="wow fadeInUp" $attributes={'data-wow-delay': '0.5'}/>
         </#if>
       </div>
 
       <div class="col-md-1"></div>
 
-      <div class="wow fadeInUp col-md-4 col-sm-12" data-wow-delay="1s">
+      <div class="wow fadeInUp col-md-4 col-sm-12" data-wow-delay="500ms">
         <div class="overview-detail">
           <@crafter.h2 $field="titleText_t:"/>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
-	<content-type>/component/component-newsletter</content-type>
+	<content-type>/component/newsletter</content-type>
 	<display-template>/templates/web/components/newsletter.ftl</display-template>
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>6b03</objectGroupId>

@@ -11,32 +11,30 @@
 		<div class="row">
 
 			<div class="col-md-12 col-sm-12 text-center">
-				<@crafter.h2 $field="titleText_t:" style="color:${contentModel.titleColor_s}"/>
-				<@crafter.p $field="description_t:"/>
+				<@crafter.h2 $field="titleText_t:" style="color: ${contentModel.titleColor_s}" />
+				<@crafter.p $field="description_t:" />
 			</div>
-			<@crafter.div $field="items_o" class="col-md-12 col-sm-12 components-container">
-				<#if contentModel.items_o?? && contentModel.items_o.item??>
-					<#list contentModel.items_o.item as class>
-						<#assign index = class?index />
-						<#if class.component??>
-							<#assign classItem = class.component />
-						<#else>
-							<#assign classItem =  siteItemService.getSiteItem(class.key) />
-						</#if>
 
-						<#assign field = "content-type" />
-						<#if classItem[field] == "/component/component-catalog-item-price" >
-							<#assign columnSize = "col-md-4 col-sm-6" />
-						<#else>
-							<#assign columnSize = "col-md-6 col-sm-12" />
-						</#if>
-
-						<@crafter.div $field="items_o" $index=index class="${columnSize}">
-							<@renderComponent component=class />
-						</@crafter.div>
-					</#list>
+			<#assign nthItemAttributes = {} />
+			<@crafter.forEach contentModel.items_o; class, index>
+				<#if class.component??>
+					<#assign classItem = class.component />
+				<#else>
+					<#assign classItem =  siteItemService.getSiteItem(class.key) />
 				</#if>
-			</@crafter.div>
+				<#assign field = "content-type" />
+				<#if classItem[field] == "/component/catalog-item-price">
+					<#assign nthItemAttributes += { "${index}": { "class": "col-md-4 col-sm-6" } } />
+				<#else>
+					<#assign nthItemAttributes += { "${index}": { "class": "col-md-6 col-sm-12" } } />
+				</#if>
+			</@crafter.forEach>
+			<@crafter.renderComponentCollection
+				$field="items_o"
+				$containerAttributes={ "class": "col-md-12 col-sm-12 add-padding-if-empty" }
+				$nthItemAttributes=nthItemAttributes
+			/>
+
 		</div>
 	</div>
 </@crafter.section>

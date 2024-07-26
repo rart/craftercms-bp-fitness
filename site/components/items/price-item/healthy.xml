@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
-	<content-type>/component/component-catalog-item-price</content-type>
+	<content-type>/component/catalog-item-price</content-type>
 	<display-template>/templates/web/components/catalog-item/catalog-item-price.ftl</display-template>
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>4461</objectGroupId>

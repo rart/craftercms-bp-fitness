@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
-	<content-type>/component/component-trainers</content-type>
+	<content-type>/component/trainers</content-type>
 	<display-template>/templates/web/components/trainer.ftl</display-template>
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>c2c3</objectGroupId>

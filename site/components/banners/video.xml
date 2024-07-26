@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
-	<content-type>/component/component-media-banner</content-type>
+	<content-type>/component/media-banner</content-type>
 	<display-template/>
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>9306</objectGroupId>

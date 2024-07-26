@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component>
-	<content-type>/component/component-header</content-type>
+	<content-type>/component/header</content-type>
 	<display-template>/templates/web/components/header.ftl</display-template>
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>2955</objectGroupId>
