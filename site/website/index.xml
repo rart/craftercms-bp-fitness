@@ -23,6 +23,12 @@
   </header_o>
   <pageSections_o>
     <item>
+      <key>/site/components/page-sections/hero.xml</key>
+      <value>Hero</value>
+      <include>/site/components/page-sections/hero.xml</include>
+      <disableFlattening>false</disableFlattening>
+    </item>
+    <item>
       <key>/site/components/page-sections/overview.xml</key>
       <value>Overview</value>
       <include>/site/components/page-sections/overview.xml</include>

@@ -1,12 +1,13 @@
 <form>
 	<title>Hero</title>
-	<description></description>
+	<description/>
 	<objectType>component</objectType>
 	<content-type>/component/hero</content-type>
-	<imageThumbnail></imageThumbnail>
+	<imageThumbnail/>
 	<quickCreate>false</quickCreate>
-	<quickCreatePath></quickCreatePath>
-	<properties>		<property>
+	<quickCreatePath/>
+	<properties>
+		<property>
 			<name>display-template</name>
 			<label>Display Template</label>
 			<value>/templates/web/hero.ftl</value>
@@ -15,7 +16,7 @@
 		<property>
 			<name>no-template-required</name>
 			<label>No Template Required</label>
-			<value></value>
+			<value/>
 			<type>boolean</type>
 		</property>
 		<property>
@@ -25,19 +26,20 @@
 			<type>string</type>
 		</property>
 	</properties>
-	<sections>		<section>
+	<sections>
+		<section>
 			<title>Hero Properties</title>
-			<description></description>
+			<description/>
 			<defaultOpen>true</defaultOpen>
 			<fields>
 				<field>
 					<type>auto-filename</type>
 					<id>file-name</id>
-					<iceId></iceId>
+					<iceId/>
 					<title>Component ID</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>size</name>
@@ -51,21 +53,20 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 					</properties>
-					<constraints>
-					</constraints>
+					<constraints/>
 				</field>
 				<field>
 					<type>input</type>
 					<id>internal-name</id>
-					<iceId></iceId>
+					<iceId/>
 					<title>Internal Name</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>size</name>
@@ -88,6 +89,266 @@
 				</field>
 			</fields>
 		</section>
+		<section>
+			<title>Banner Section</title>
+			<description/>
+			<defaultOpen>true</defaultOpen>
+			<fields>
+				<field>
+					<type>input</type>
+					<id>h3FirstText_t</id>
+					<iceId>iceHeaderBanner</iceId>
+					<title>H3 First Text</title>
+					<description/>
+					<defaultValue/>
+					<help/>
+					<properties>
+						<property>
+							<name>size</name>
+							<value><![CDATA[50]]></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxlength</name>
+							<value><![CDATA[50]]></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value/>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value><![CDATA[false]]></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[true]]></value>
+							<type>boolean</type>
+						</constraint>
+						<constraint>
+							<name>pattern</name>
+							<value/>
+							<type>string</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>input</type>
+					<id>h1SecondText_t</id>
+					<iceId>iceHeaderBanner</iceId>
+					<title>H1 Second Text</title>
+					<description/>
+					<defaultValue/>
+					<help/>
+					<properties>
+						<property>
+							<name>size</name>
+							<value><![CDATA[50]]></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxlength</name>
+							<value><![CDATA[50]]></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value/>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value><![CDATA[false]]></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[true]]></value>
+							<type>boolean</type>
+						</constraint>
+						<constraint>
+							<name>pattern</name>
+							<value/>
+							<type>string</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>input</type>
+					<id>h1ThirdText_t</id>
+					<iceId>iceHeaderBanner</iceId>
+					<title>H1 Third Text</title>
+					<description/>
+					<defaultValue/>
+					<help/>
+					<properties>
+						<property>
+							<name>size</name>
+							<value><![CDATA[50]]></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxlength</name>
+							<value><![CDATA[50]]></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value/>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value><![CDATA[false]]></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value/>
+							<type>boolean</type>
+						</constraint>
+						<constraint>
+							<name>pattern</name>
+							<value/>
+							<type>string</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>node-selector</type>
+					<id>mediaBanner_o</id>
+					<iceId/>
+					<title>Media Banner</title>
+					<description/>
+					<defaultValue/>
+					<help/>
+					<properties>
+						<property>
+							<name>minSize</name>
+							<value><![CDATA[0]]></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxSize</name>
+							<value><![CDATA[1]]></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>itemManager</name>
+							<value><![CDATA[mediaBannerTypes]]></value>
+							<type>datasource:item</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value/>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>disableFlattening</name>
+							<value/>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useSingleValueFilename</name>
+							<value/>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>allowDuplicates</name>
+							<value/>
+							<type>boolean</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>input</type>
+					<id>buttonText_t</id>
+					<iceId/>
+					<title>Button Text</title>
+					<description/>
+					<defaultValue/>
+					<help/>
+					<properties>
+						<property>
+							<name>size</name>
+							<value><![CDATA[50]]></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxlength</name>
+							<value><![CDATA[50]]></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value/>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value><![CDATA[false]]></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[true]]></value>
+							<type>boolean</type>
+						</constraint>
+						<constraint>
+							<name>pattern</name>
+							<value/>
+							<type>string</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>dropdown</type>
+					<id>buttonSectionLink_s</id>
+					<iceId/>
+					<title>Button Section Link</title>
+					<description/>
+					<defaultValue/>
+					<help/>
+					<properties>
+						<property>
+							<name>datasource</name>
+							<value><![CDATA[buttonSectionTypes]]></value>
+							<type>datasource:item</type>
+						</property>
+						<property>
+							<name>emptyvalue</name>
+							<value/>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value/>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[true]]></value>
+							<type>boolean</type>
+						</constraint>
+					</constraints>
+				</field>
+			</fields>
+		</section>
 	</sections>
-	<datasources>	</datasources>
+	<datasources/>
 </form>
