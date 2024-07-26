@@ -10,7 +10,7 @@
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-			<a href="#" class="navbar-brand">
+			<a href="/" class="navbar-brand">
 				<@crafter.span $field="gymName_t:"/>
 			</a>
 		</div>

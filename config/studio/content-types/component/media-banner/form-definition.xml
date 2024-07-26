@@ -9,7 +9,7 @@
       <property>
          <name>display-template</name>
          <label>Display Template</label>
-         <value/>
+         <value>/templates/web/components/media-banner.ftl</value>
          <type>template</type>
       </property>
       <property>

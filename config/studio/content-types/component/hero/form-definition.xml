@@ -350,5 +350,54 @@
 			</fields>
 		</section>
 	</sections>
-	<datasources/>
+	<datasources>
+		<datasource>
+			<type>components</type>
+			<id>mediaBannerTypes</id>
+			<title>Media Banner Types</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>allowShared</name>
+					<value><![CDATA[true]]></value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>allowEmbedded</name>
+					<value><![CDATA[false]]></value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableBrowse</name>
+					<value><![CDATA[false]]></value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableSearch</name>
+					<value><![CDATA[true]]></value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>baseRepositoryPath</name>
+					<value><![CDATA[/site/components/banners]]></value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>baseBrowsePath</name>
+					<value><![CDATA[/site/components/banners]]></value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>contentTypes</name>
+					<value><![CDATA[/component/media-banner]]></value>
+					<type>contentTypes</type>
+				</property>
+				<property>
+					<name>tags</name>
+					<value/>
+					<type>string</type>
+				</property>
+			</properties>
+		</datasource>
+	</datasources>
 </form>

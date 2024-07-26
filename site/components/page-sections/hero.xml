@@ -16,7 +16,7 @@
 	<h1SecondText_t><![CDATA[What is your profession?]]></h1SecondText_t>
 	<h1ThirdText_t />
 	<buttonText_t>View More (+)</buttonText_t>
-	<mediaBanner_o>
+	<mediaBanner_o item-list="true">
 		<item>
 			<key>/site/components/banners/video.xml</key>
 			<value>Video Banner</value>

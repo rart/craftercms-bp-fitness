@@ -13,38 +13,10 @@
 				</div>
 			</div>
 		</div>
-		<#if contentModel.mediaBanner_o.item??>
-			<#assign myItem = siteItemService.getSiteItem(contentModel.mediaBanner_o.item.key) />
-			<#if myItem.displayMedia_s == "video">
-				<@crafter.div class="header-video">
-					<#if myItem.videoBackground_s??>
-						<@crafter.video
-              $model=myItem
-              $field="videoBackground_s"
-              playsinline=""
-              autoplay=""
-              muted=""
-              loop=""
-              class="header-video__teaser-video"
-              id="header-video__teaser-video"
-            >
-							<source src="${myItem.videoBackground_s}" type="video/mp4">
-						</@crafter.video>
-					</#if>
-				</@crafter.div>
-			<#else>
-				<#assign imageSource = "" />
-				<#if myItem.bannerImages_o.item??>
-					<#list myItem.bannerImages_o.item as row>
-						<#if (imageSource?length > 0) >
-							<#assign imageSource = imageSource + ',' + row.bannerImage_s />
-						<#else>
-							<#assign imageSource = row.bannerImage_s />
-						</#if>
-					</#list>
-					<input type="hidden" id="mediaBannerImages" data-media-banner-images="${imageSource}"/>
-				</#if>
-			</#if>
-		</#if>
+		<@crafter.renderComponentCollection
+			$field="mediaBanner_o"
+			$containerAttributes={ "class": "header-video" }
+			$itemAttributes={ "class": "media-banner-item" }
+		/>
 	</div>
 </@crafter.section>

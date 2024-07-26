@@ -78,6 +78,11 @@ VIDEO BACKGROUND CSS
   height: 100%;
 }
 
+.media-banner-item,
+.media-banner-component {
+  height: 100%;
+}
+
 .header-video iframe {
   height: 100%;
   width: 100%;
